@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkest-blue: #012A4A;
+  --dark-blue: #013A63;
+  --medium-blue: #2C7DA0;
+  --light-blue: #A9D6E5;
+  --stone: #E0E1DD;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--stone);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--light-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin:0;
+}
+
+
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  padding: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:var(--darkest-blue);
+}
+
+header h1 {
+  color:var(--stone);
+  font-size: 45px;
+
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var();
+  border-bottom: 4px solid var(--darkest-blue);
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 5px;
+  Color: var(--darkest-blue);
+  font-size: 18px;
+  
+}
+
+nav a:hover {
+  background-size: 100% 100% 100%;
+  background-color: Var(--darkest-blue);
+  color: var(--stone);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+aside {
+  flex: 1;
+  text-align: center;  
+  padding: 10px;
+  border-right: 4px solid var(--darkest-blue);
+  color: var(--darkest-blue);
+  }
+
+ aside a{
+    text-decoration: none;
+    color:var(--light-blue);
+  }
+
+aside a:hover {
+    text-decoration: none;
+    color:var(--light-blue);
+    background-color: var(--dark-blue);
+  }
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--darkest-blue);
+  color: var(--stone);
+}
+
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  flex: 4;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: center;
+  padding-right: 0px;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 25% 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+
+/* this is for the Work section*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid purple;
+  display: flex;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: 40%;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  color: white;
+  font-size:2rem;
+}
+
+.flex-item:first-child{
+  min-height: 300px;
+  flex-basis: 83%;
+}
+
+.flex-item:hover {
+  background-color: pink;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  
+}

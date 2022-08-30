@@ -5,3 +5,7 @@ needs to include:
 - description of project worked on
 - screen shot of the application
 - link to deployed version
+
+## About the Project
+![Project Screenshot] (/assets/images/ScreenShot.png)
+

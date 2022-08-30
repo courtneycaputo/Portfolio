@@ -99,21 +99,9 @@ aside h2 {
 aside p {
   margin-bottom: 20px;
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 13px;
   }
 
-aside a{
-  text-decoration: none;
-  color:var(--darkest);
-  padding: 15px;
-  }
-
-aside a:hover {
-  text-decoration: none;
-  color:var(--light);
-  background-color: var(--dark);
-  padding: 0px;
-  }
 
 aside img {
   border-radius: ;
@@ -121,6 +109,24 @@ aside img {
   width: 150px;
   margin: 10px;
 }
+
+/* Contact Section */
+ul.ContactList {
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.ContactList a {
+  text-decoration: none;
+  color:var(--dark);
+  }
+
+.ContactList a:hover {
+  text-decoration: none;
+  color:var(--light);
+  background-color: var(--dark);
+  }
+
 
 /* Work Section */
 .page-section {

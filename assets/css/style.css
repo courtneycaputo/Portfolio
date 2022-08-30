@@ -6,8 +6,10 @@
   --darkest-blue: #012A4A;
   --dark-blue: #013A63;
   --medium-blue: #2C7DA0;
-  --light-blue: #A9D6E5;
+  --light-blue: #bbd1d9;
   --stone: #E0E1DD;
+  --white: white; 
+  --light-white: rgba(255, 255, 255, 0.938);
 }
 
 body {
@@ -44,10 +46,9 @@ header {
 header h1 {
   color:var(--stone);
   font-size: 45px;
-
 }
 
-
+/* Navigation */
 nav {
   display: flex;
   flex-direction: row;
@@ -70,10 +71,7 @@ nav a:hover {
   color: var(--stone);
 }
 
-nav a:last-child {
-  margin-right: 0;
-}
-
+/* About Me & Contact Section Side Bar */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
@@ -90,29 +88,41 @@ aside {
   color: var(--darkest-blue);
   }
 
- aside a{
-    text-decoration: none;
-    color:var(--light-blue);
+aside h2 {
+  font-size: 25px;
+  padding: 10px;
+  }
+
+aside p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  }
+
+aside a{
+  text-decoration: none;
+  color:var(--darkest-blue);
+  padding: 10px;
   }
 
 aside a:hover {
-    text-decoration: none;
-    color:var(--light-blue);
-    background-color: var(--dark-blue);
+  text-decoration: none;
+  color:var(--light-blue);
+  background-color: var(--dark-blue);
+  padding: 0px;
   }
 
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background: var(--darkest-blue);
-  color: var(--stone);
+aside img {
+  border-radius: ;
+  border: 3px solid var(--darkest-blue);
+  width: 150px;
+  margin: 10px;
 }
 
-
+/* Work Section */
 .page-section {
-  margin: 25px 0;
-  padding: 10px 0;
+  margin: 5px 0;
+  padding: 45px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -125,8 +135,8 @@ footer {
   flex: 0 0 20%;
   text-align: center;
   padding-right: 0px;
-  font-size: 35px;
-  line-height: 1.1;
+  font-size: 45px;
+  color: var(--darkest-blue);
 }
 
 .page-section > div {
@@ -134,13 +144,13 @@ footer {
 }
 
 .page-section p {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-left: 20px;
   font-size: 18px;
 }
 
 
-/* this is for the Work section*/
+/* Applications to display*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -148,19 +158,18 @@ footer {
 }
 
 .flex-item {
-  border: 5px solid purple;
+  border: 5px solid var(--medium-blue);
   display: flex;
   min-height: 150px;
   max-height: 150px;
   flex-basis: 40%;
   align-items: flex-end;
-  padding: 0 0 20px 0;
+  padding: 0 0 50px 0;
   margin: 0.5em;
   text-decoration: none;
-  background-blend-mode: soft-light;
   background-size: 150%;
-  color: white;
-  font-size:2rem;
+  color: var(--medium-blue);
+  font-size:30px;
 }
 
 .flex-item:first-child{
@@ -169,14 +178,26 @@ footer {
 }
 
 .flex-item:hover {
-  background-color: pink;
-}
+  background-color: var();
+  color: var(--darkest-blue);
+  border: 5px solid var(--darkest-blue);
+  opacity: 100%;
+ }
 
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--darkest-blue);
+  color: var(--stone);
+  font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
   }
+
   
 }

@@ -7,5 +7,5 @@ needs to include:
 - link to deployed version
 
 ## About the Project
-![Project Screenshot] (/assets/images/ScreenShot.png)
+<img src="/assets/images/ScreenShot.png">
 
